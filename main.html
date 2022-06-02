@@ -10,6 +10,7 @@
        <button class="btn-add">Додати годинник</button>
     </header>
     <div id="main">
+      <div id="watch-panel" class="watch-panel">
         <div id="watch">
             <div class="frame-face"></div>
             <ul class="minute-marks">
@@ -22,8 +23,8 @@
               <li></li><li></li><li></li><li></li><li></li><li></li>
               <li></li><li></li><li></li><li></li><li></li><li></li>
             </ul>
-            <div class="digital-wrap">
-              
+            <div id="digital-wrap" class="digital-wrap" >
+                <div id="digital-clock" class="digital-clock" onload="digitalClock()"></div>
             </div>
             <ul class="digits">
               <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li>
@@ -36,8 +37,11 @@
           <h2>New Watch</h2>
    
     </div>
+  </div>
+  
         </main>
         
 </body>
 <script src="clock.js"></script>
+<script src="digitalClock.js"></script>
 <script src="main.js"></script>
