@@ -3,6 +3,7 @@ const minHand = document.getElementById("minutes-hand");
 const secHand = document.getElementById("seconds-hand");
 
 
+
 function currentTime(){
     const now = new Date();
 

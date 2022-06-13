@@ -9,6 +9,8 @@ function digitalClock(){
     const digitMins = now.getUTCMinutes();
     const digitHour = now.getUTCHours()+3;
 
+console.log(digitHour);
+
 const digitHour1 = digitHour < 10 ? "0" + digitHour : digitHour;
 const digitMins1 = digitMins < 10 ? "0" + digitMins : digitMins;
 const digitSec1 = digitSec < 10 ? "0" + digitSec : digitSec;
