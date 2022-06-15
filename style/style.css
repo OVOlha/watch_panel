@@ -8,20 +8,6 @@ header {
   border-bottom: 2px solid var(--clr-gray-light);
 }
 
-.btn-add {  
-  width: 10em;
-  height: 5em;
-  font-size: 1.5em;
-  border: none;
-  background-color: #626c88;
-  color: white;
-  cursor: pointer;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  border-radius: 0.2em;
-  outline: none;
-  transition: all 100ms ease-in;
-}
 
 .btn-add:active,
 .btn-add:hover {
@@ -38,14 +24,14 @@ header {
 .watch-container {
   margin-top: 1em;
   display: flex;
-  flex-wrap: wrap;
+ 
 }
 
 #watch { 
   font-size:1em; 
   position:relative;
   width: 30em;
-  margin: 2em 10em;
+  margin: 10em 20em;
 
 }
 #watch .frame-face {
@@ -310,4 +296,80 @@ header {
   font-family: Orbitron;
   letter-spacing: 5px;
   
+}
+
+
+#watch .showLeft {
+ 
+  border: 1px solid white !important;
+  text-shadow: white !important;
+  color: white !important;
+  padding: 10px;
+  backface-visibility: hidden;
+}
+#watch .icons li {
+  background: none repeat scroll 0 0 white;
+  height: 7px;
+  width: 7px;
+  line-height: 0;
+  list-style: none outside none;
+  margin-right: 15px;
+  margin-top: 3px;
+  vertical-align: top;
+  border-radius: 50%;
+  pointer-events: none;
+}
+#watch .btn-left {
+  left: 0.4em;
+}
+#watch .btn-right {
+  right: 0.4em;
+}
+#watch .btn-left,
+.btn-right {
+
+  position: absolute;
+  top: 0.24em;
+}
+#watch .dropbtn {
+  background-color: #4c4c4c;
+  position: fixed;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+#watch .dropbtn:hover,
+.dropbtn:focus {
+  background-color: #4c4c4c;
+}
+#watch .dropdown {
+  position: absolute;
+  display: inline-block;
+  right: 0.4em;
+}
+#watch .dropdown-content {
+  display: none;
+  position: relative;
+  margin-top: 60px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#watch .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#watch .dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+#watch .show {
+  display: block;
 }

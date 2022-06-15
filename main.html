@@ -7,11 +7,23 @@
 
 <body>
     <header>
-       <button class="btn-add" onclick="currentTime()">Додати годинник</button>
-    </header>
+          </header>
     <div id="main" class="main">
       <div id="watch-container" class="watch-container">
-        <div id="watch" class="watch">
+        <div id="watch" class="watch" onload="currentTime2()">
+          <!-- ... -->
+  <div class="dropdown">
+       <ul class="dropbtn icons btn-right showLeft" onclick="showDropdown()">
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+       <div id="myDropdown" class="dropdown-content">
+      <a href="#home">Змінити часовий пояс</a>
+      <a href="#about">Редагувати</a>
+    </div>
+  </div>
+
             <div class="frame-face"></div>
             <ul class="minute-marks">
               <li></li><li></li><li></li><li></li><li></li><li></li>
@@ -24,16 +36,46 @@
               <li></li><li></li><li></li><li></li><li></li><li></li>
             </ul>
             <div id="digital-wrap" class="digital-wrap" >
-                <div id="digital-clock" class="digital-clock" onload="digitalClock()" ></div>
+                <div id="digital-clock1" class="digital-clock" onload="digitalClock1()" ></div>
             </div>
             <ul class="digits">
               <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li>
               <li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li>
             </ul>
-            <div id="hours-hand" class="hours-hand"></div>
-            <div id="minutes-hand" class="minutes-hand"></div>
-            <div id="seconds-hand" class="seconds-hand"></div>
+            <div id="hours-hand1" class="hours-hand"></div>
+            <div id="minutes-hand1" class="minutes-hand"></div>
+            <div id="seconds-hand1" class="seconds-hand"></div>
           </div>
+
+
+          <div id="watch-container" class="watch-container">
+            <div id="watch" class="watch" onload="currentTime2()">
+                <div class="frame-face"></div>
+                <ul class="minute-marks">
+                  <li></li><li></li><li></li><li></li><li></li><li></li>
+                  <li></li><li></li><li></li><li></li><li></li><li></li>
+                  <li></li><li></li><li></li><li></li><li></li><li></li>
+                  <li></li><li></li><li></li><li></li><li></li><li></li>
+                  <li></li><li></li><li></li><li></li><li></li><li></li>
+                  <li></li><li></li><li></li><li></li><li></li><li></li>
+                  <li></li><li></li><li></li><li></li><li></li><li></li>
+                  <li></li><li></li><li></li><li></li><li></li><li></li>
+                </ul>
+                <div id="digital-wrap" class="digital-wrap" >
+                    <div id="digital-clock2" class="digital-clock" onload="digitalClock2()" ></div>
+                </div>
+                <ul class="digits">
+                  <li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li>
+                  <li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li>
+                </ul>
+                <div id="hours-hand2" class="hours-hand"></div>
+                <div id="minutes-hand2" class="minutes-hand"></div>
+                <div id="seconds-hand2" class="seconds-hand"></div>
+              </div>
+              
+       
+        </div>
+       
           
    
     </div>
